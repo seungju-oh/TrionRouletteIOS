@@ -1,9 +1,15 @@
 # 🎯 TrionRoulette for iOS (트리온 룰렛)
+<p align="center">
+  <img height="500" alt="Screenshot 2026-05-19 at 16 05 00" src="https://github.com/user-attachments/assets/a849b656-a892-43e3-9f78-057df7ad1cf4" />
+  <img height="500" alt="Screenshot 2026-05-19 at 16 07 20" src="https://github.com/user-attachments/assets/ec7221ae-e3cb-4f79-9d2f-7d16d16ea414" />
+</p>
+
 [Appium 자동화](https://github.com/seungju-oh/TrionRoulette-AOS-Appium-Test)를 위해 AI를 통해 제작된 타깃 앱입니다.
 3가지 모드(기본, 서바이벌, 커스텀 확률)를 지원하며, 사용자 편의성과 QA 테스트 효율성을 극대화한 iOS 룰렛 앱입니다.
 
 ## ✨ 핵심 기능 (Features)
 - **3가지 룰렛 모드 완벽 구현**
+
   - Flow A (기본): N빵, 랜덤 뽑기 등 가장 기본적인 1/N 룰렛
   - Flow B (서바이벌): 한 번 당첨된 항목은 다음 회차에서 제외되며, 모두 소진 시 자동 초기화되는 서바이벌 모드
   - Flow C (확률): 각 항목의 당첨 확률(%)을 직접 지정하는 고유 확률 모드
