@@ -4,7 +4,7 @@
   <img height="500" alt="Screenshot 2026-05-19 at 16 07 20" src="https://github.com/user-attachments/assets/ec7221ae-e3cb-4f79-9d2f-7d16d16ea414" />
 </p>
 
-[Appium 자동화](https://github.com/seungju-oh/TrionRoulette-AOS-Appium-Test)를 위해 AI를 통해 제작된 타깃 앱입니다.
+[Appium 자동화](https://github.com/seungju-oh/TrionRoulette-AOS-Appium-Test)를 위해 AI(Gemini 3.1 Pro)를 통해 제작된 타깃 앱입니다.
 3가지 모드(기본, 서바이벌, 커스텀 확률)를 지원하며, 사용자 편의성과 QA 테스트 효율성을 극대화한 iOS 룰렛 앱입니다.
 
 ## ✨ 핵심 기능 (Features)
@@ -25,6 +25,7 @@ Appium 등 UI 자동화 테스트 도구를 활용한 QA 효율성을 높이기 
 - 팝업창 및 모드 전환 라디오 버튼 등 모든 인터랙션 요소 식별자(ID) 적용 완료
 
 ## 🛠 기술 스택 (Tech Stack)
+- **Assist AI**: Google Gemini 3.1 Pro Standard
 - **Language**: Swift
 - **UI Toolkit**: SwiftUI
 - **Local Storage**: UserDefaults (JSONEncoder / JSONDecoder)
