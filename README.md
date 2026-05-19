@@ -1,0 +1,32 @@
+# 🎯 TrionRoulette for iOS (트리온 룰렛)
+<p align="center">
+  <img height="500" alt="Screenshot 2026-05-19 at 16 05 00" src="https://github.com/user-attachments/assets/a849b656-a892-43e3-9f78-057df7ad1cf4" />
+  <img height="500" alt="Screenshot 2026-05-19 at 16 07 20" src="https://github.com/user-attachments/assets/ec7221ae-e3cb-4f79-9d2f-7d16d16ea414" />
+</p>
+
+[Appium 자동화](https://github.com/seungju-oh/TrionRoulette-AOS-Appium-Test)를 위해 AI를 통해 제작된 타깃 앱입니다.
+3가지 모드(기본, 서바이벌, 커스텀 확률)를 지원하며, 사용자 편의성과 QA 테스트 효율성을 극대화한 iOS 룰렛 앱입니다.
+
+## ✨ 핵심 기능 (Features)
+- **3가지 룰렛 모드 완벽 구현**
+
+  - Flow A (기본): N빵, 랜덤 뽑기 등 가장 기본적인 1/N 룰렛
+  - Flow B (서바이벌): 한 번 당첨된 항목은 다음 회차에서 제외되며, 모두 소진 시 자동 초기화되는 서바이벌 모드
+  - Flow C (확률): 각 항목의 당첨 확률(%)을 직접 지정하는 고유 확률 모드
+- **프리셋 저장 및 불러오기 (UserDefaults (JSONEncoder / JSONDecoder))**
+  - 사용자가 입력한 룰렛 리스트를 기기에 영구 저장하여 언제든 재사용 가능 (덮어쓰기 방어 로직 적용)
+- **사용자 경험(UX) 최적화**
+  - 12가지 색상 팔레트와 중복 배제 알고리즘으로 시각적 구분감 강화
+  - 키보드 오버랩 방지 및 애니메이션 스킵 기능 적용
+
+## 🚀 QA 자동화 테스트 대응 (Shift-Left Testing)
+Appium 등 UI 자동화 테스트 도구를 활용한 QA 효율성을 높이기 위해, 기획/개발 단계부터 **전체 UI 요소에 Accessibility ID (`.accessibilityIdentifier`)를 체계적으로 매핑**하였습니다.
+- 동적 리스트 항목(추가/삭제/수정), 확률 입력창 등 변화하는 인덱스에 맞춘 동적 ID 부여 완료 (`input_item_text_0`, `btn_delete_item_1` 등)
+- 팝업창 및 모드 전환 라디오 버튼 등 모든 인터랙션 요소 식별자(ID) 적용 완료
+
+## 🛠 기술 스택 (Tech Stack)
+- **Language**: Swift
+- **UI Toolkit**: SwiftUI
+- **Local Storage**: UserDefaults (JSONEncoder / JSONDecoder)
+- **Architecture/Animation**: Canvas, withAnimation, rotationEffect (SwiftUI)
+- **UI Automation (QA)**: Appium, XCUITest (Accessibility Identifier)
